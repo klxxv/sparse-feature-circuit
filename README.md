@@ -12,11 +12,16 @@
 
 ## 复现目标
 
-1. ✅ 训练/加载 SAE 获取稀疏特征
-2. ✅ 实现 circuit discovery 算法：
-   - 对目标行为计算 activation patching
-   - 用 SAE 特征替代 MLP neuron / attention head
-   - 构建稀疏因果图
+**目标模型** (4个):
+1. **Llama 3** (8B) — LlamaScope SAE
+2. **Qwen 3** (8B) — QwenScope SAE
+3. **DeepSeek V4** — DeepSeek SAE
+4. **Gemma 4** — Gemma Scope 2 SAE
+
+1. ✅ 训练/加载 SAE 获取稀疏特征（4个模型）
+2. ✅ 跨模型 circuit discovery：
+   - 对 IOI、间接对象识别等任务比较不同模型的 circuit 结构
+   - SAE 特征级别的因果图分析
 3. ✅ circuit editing（干预特定特征改变模型行为）
 4. ✅ 无监督 pipeline：自动发现行为 + 自动 circuit discovery
 
