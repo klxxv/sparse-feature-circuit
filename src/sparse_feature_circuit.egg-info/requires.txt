@@ -1,0 +1,17 @@
+torch>=2.5.0
+lightning>=2.5.0
+sae-lens>=6.0.0
+transformer-lens>=2.0.0
+datasets>=3.0.0
+wandb>=0.18.0
+rich>=13.0.0
+numpy<2.0,>=1.24
+einops>=0.8.0
+networkx>=3.0
+matplotlib>=3.8
+
+[dev]
+pytest>=8.0
+black>=24.0
+ruff>=0.5.0
+ipython>=8.0

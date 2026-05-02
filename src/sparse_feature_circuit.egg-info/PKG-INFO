@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: sparse-feature-circuit
+Version: 0.1.0
+Summary: Reproduction of ICLR 2025: Sparse Feature Circuits - Discovering and Editing Interpretable Causal Graphs
+Requires-Python: >=3.12
+Requires-Dist: torch>=2.5.0
+Requires-Dist: lightning>=2.5.0
+Requires-Dist: sae-lens>=6.0.0
+Requires-Dist: transformer-lens>=2.0.0
+Requires-Dist: datasets>=3.0.0
+Requires-Dist: wandb>=0.18.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: numpy<2.0,>=1.24
+Requires-Dist: einops>=0.8.0
+Requires-Dist: networkx>=3.0
+Requires-Dist: matplotlib>=3.8
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: black>=24.0; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"
+Requires-Dist: ipython>=8.0; extra == "dev"
